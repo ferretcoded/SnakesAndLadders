@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakes and Ladders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="SnakesAndLaddders.js"></script>
+</head>
+<body onload="displayBoard()">
+
+    <div id="tableAndInfo">
+
+        <div id="boardSection">
+            <div id="boardDisplay"></div>
+        </div>
+    
+        <div id="infoBorder">
+            <div id="diceSection">
+                <h1 style="text-align: center;">SNAKES AND LADDERS</h1>
+                <div id="diceDisplay"></div>
+                <img class="diceClass" id="diceVisual" src="dice1.png">
+                <form>
+                    <input type="button" name="diceRoll" id="dice" value="Roll Dice" onclick="rollDice()">
+                </form>
+                <form>
+                    <input type="button" name="snakeToggle" value="Toggle Snakes and More Snakes" onclick="snakesToggle()">
+                </form>
+                <form>
+                    <input type="button" name="reset" value="Reset Game" onclick="resetGame()">
+                </form>
+                <h3 id="snakesOnlyIndicator">Snakes Only: Off</h3>
+            </div>
+            <div id="statsSection">
+                <div id="win"></div>
+            </div>
+            <h3>Rules:</h3>
+            <p>
+                1. Landing on a Ladder moves you up.<br>
+                2. Landing on a Snake moves you down.<br>
+                3. Rolling a 6 lets you take an extra turn<br>
+                4. You can only take 3 extra turns.<br>
+                5. You win once you reach 100.<br>
+                6. Snakes Only Mode turns all Ladders to Snakes.
+            </p>
+    </div>
+    </div>
+
+
+
+</body>
+</html>
